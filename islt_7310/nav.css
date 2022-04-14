@@ -1,6 +1,12 @@
+ul {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
 li{
     margin: 5px;
     padding: 5px;
-    border: 1px;
+    border: 1px solid brown;
     display: inline-block;
 }

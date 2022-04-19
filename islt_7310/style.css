@@ -18,3 +18,91 @@ p#firstP::first-letter {
 p.P {
     text-indent: 1cm;
 }
+
+div.pContainer{
+    margin: 5px;
+    padding: 0px 20px;
+    border: 2px solid black;
+    max-width: 1000px;
+}
+
+div.eduContainer{
+    margin: 5px;
+    padding: 0px 20px;
+    border: 2px solid black;
+    max-width: 1000px;
+}
+
+main.aboutMain{
+    margin: 2px;
+    padding: 5px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+
+main.aboutMain p>em>strong{
+    margin: 2px;
+    padding: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+}
+
+footer p{
+    margin: 5px;
+    padding: 4px 4px;
+    align-items: center;
+}
+img.picofme {
+    width: 300px;
+    height: 300px;
+}
+
+a img#resume{
+    width: 300px;
+    height: 300px;
+}
+
+p{
+    font-size: 25px;
+}
+
+@media (max-width: 800px){
+    p{
+        font-size: 20px;
+    }
+
+    img.picofme, a img#resume{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 600px){
+    p{
+        font-size: 15px;
+    }
+
+    img.picofme, a img#resume{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* @media (max-width: 800px){
+    p{
+        font-size: 20px;
+    }
+
+    img.picofme, a img#resume{
+        width: 200px;
+        height: 200px;
+    }
+} */

@@ -1,39 +1,12 @@
-/* .grid-container{
-    display: grid;
-    grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-    gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
-}
-.grid-container header.header{
-    grid-area: header;
-}
-.grid-container .pContainer{
-    grid-area: main;
-}
-.grid-container .eduContainer{
-    grid-area: menu;
-}
-.grid-container footer{
-    grid-area: footer;
-}
-.grid-container img{
-    grid-area: right;
-} */
 
-
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 h1 {
     color: gray;
     display: flex;
     justify-content: center;
     text-align: center;
+    font-family: 'Lobster', cursive;
 }
 
 #hh1 {
@@ -76,10 +49,51 @@ div.pContainer{
 }
 
 div.eduContainer{
+    display: flex;
+    flex-wrap: wrap;
     margin: 5px;
     padding: 0px 40px;
     max-width: 1200px;
+    justify-content: center;
 }
+
+div.backgroundCont{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 0px 40px;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+div.eduContainer ul{
+    display: block;
+    float: Left;
+    font-size: 25px;
+    max-width: 200px;
+}
+
+div.eduContainer ul.eduUL{
+    font-size: 25px;
+    max-width: 430px;
+    justify-content: center;
+}
+
+p#listHead{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+blockquote{
+    display:block;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+}
+
 h3#aboutMe{
     font-size: 40px;
     margin-left: 35px;
@@ -290,11 +304,17 @@ h1#projh1{
     div.pContainer{
         font-size: 20px;
     }
-    div.eduContainer{
-        font-size: 20px;
+    div.eduContainer ul, div.eduContainer ul.eduUL{
+        font-size: 15px;
     }
     main.projMain p{
         font-size: 17px;
+    }
+    blockquote{
+        font-size: 17px;
+    }
+    p#listHead{
+        font-size: 25px;
     }
 }
 
@@ -350,9 +370,50 @@ h1#projh1{
     div.pContainer{
         font-size: 15px;
     }
-    div.eduContainer{
+    div.eduContainer ul, div.eduContainer ul.eduUL{
         font-size: 15px;
     }
+    blockquote{
+        font-size: 15px;
+    }
+    p#listHead{
+        font-size: 20px;
+    }
+}
+
+@media print{
+    body{
+        background: transparent !important;
+        color: #000 !important;
+        margin: 1in;
+    }
+    header,
+    footer,
+    img#resume {
+        display: none;
+    }
+    h3#aboutMe{
+        font-size: 20pt;
+        margin: 5pt 35pt 5pt 35pt;
+    }
+    .pContainer, .eduContainer, .eduContainer ul{
+        font-family: serif;
+        font-size: 40pt;
+    }
+    h1{
+        margin-top: 30pt;
+    }
+    blockquote{
+        font-size: 15pt;
+        justify-content: center;
+    }
+    img.picofme{
+        margin-left: 30pt;
+        width: 100pt;
+        height: 100pt;
+        justify-content: center;
+    }
+
 }
 
 

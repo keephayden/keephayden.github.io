@@ -21,6 +21,11 @@ Tested:  April 16, 2022: Passed on Safari and Chrome browsers.
                 <title>About Me</title>
                 <link rel="stylesheet" href="style.css">
                 <link rel="stylesheet" href="nav.css">
+                <!-- Font Link Below -->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">    
+                <!-- Font Link Above -->
     </head>
     <!-- <div class="grid-container"> -->
     <body id="gridCont">
@@ -42,7 +47,7 @@ Tested:  April 16, 2022: Passed on Safari and Chrome browsers.
                 </ul>
             </nav>
         </header>
-        <h1>Jordan Hayden</h1>
+        <h1 id="abouth1">Jordan Hayden</h1>
         <h3 id="aboutMe">About Me</h3>
         <!-- <h1>Jordan Hayden</h1>
         
@@ -58,7 +63,40 @@ Tested:  April 16, 2022: Passed on Safari and Chrome browsers.
             <img class="picofme" src="aboutme.jpg" alt="PictureOfMe">
             <blockquote>'Float like a <em>butterfly</em> sting like a <em>bee</em>.' -Muhammad Ali</blockquote>
             <div class="eduContainer">
-                <p>
+                <p id="listHead"><strong><em>Background Information</em></strong></p>
+                <div .backgroundCont>
+                    <ul>
+                        <strong>Degrees:</strong>
+                        <li>Major in Information Technology</li>
+                        <li>Minor in Business</li>
+                    </ul>
+                    <ul>
+                        <strong>Skills:</strong>
+                        <li>Web Development</li>
+                        <li>Cyber security</li>
+                        <li>Networking</li>
+                        <li>Multi-Media</li>
+                        <li>Programming</li>
+                    </ul>
+                    <ul>
+                        <strong>Languages:</strong>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>C Sharp</li>
+                    </ul>
+                    <ul class="eduUL">
+                        <strong>Education:</strong>
+                        <li>Junior at the University of Missouri</li>
+                        <li>3.8 GPA</li>
+                        <li>Certificates in Cyber Security, Information Systems and Technology, Web and Mobile
+                            Applications Development</li>
+                    </ul>
+                </div>
+
+
+                <!-- <p>
                     <strong>Degrees:</strong>
                     <br>
                     - Major in Information Technology
@@ -87,7 +125,7 @@ Tested:  April 16, 2022: Passed on Safari and Chrome browsers.
                     - Junior at the University of Missouri
                     - 3.8 GPA
                     - Certificates in Cyber Security, Information Systems and Technology, Web and Mobile
-                    Applications Development</p>
+                    Applications Development</p> -->
                 </div>
                 <a href="/islt_7310/resume.pdf"><img id="resume" src="download.png" alt="Resume"></a>
     <!-- </div> -->

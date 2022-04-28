@@ -109,6 +109,12 @@ main.aboutMain{
     justify-content:space-around;
     align-items: center;
 }
+
+video{
+    max-width: 500px;
+    max-height: 300px;
+}
+
 main.homeMain{
     margin: 2px;
     padding: 5px;
@@ -340,6 +346,13 @@ h1#projh1{
     p#listHead{
         font-size: 25px;
     }
+    video{
+        width: 300px;
+        height: 200px;
+    }
+    footer p{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 600px){
@@ -403,6 +416,13 @@ h1#projh1{
     p#listHead{
         font-size: 20px;
     }
+    footer p{
+        font-size: 10px;
+    }
+    video{
+        width: 180px;
+        height: 100px;
+    }
 }
 
 @media print{
@@ -411,6 +431,8 @@ h1#projh1{
         color: #000 !important;
         margin: 1in;
     }
+    footer img,
+    video,
     header,
     footer,
     img#resume {
@@ -437,9 +459,6 @@ h1#projh1{
         height: 100pt;
         justify-content: center;
     }
-    /* footer img{
-
-    } */
 
 }
 

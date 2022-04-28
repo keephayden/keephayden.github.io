@@ -129,6 +129,7 @@ main.homeMain p{
     padding: 5px;
 }
 
+/* start of footer */
 footer{
     display: flex;
     justify-content: space-between;
@@ -158,11 +159,16 @@ div#phoneFoot img, div#emailFoot img{
     height: 49px;
     width: 50px;
 }
+div#phoneFoot img:hover, div#emailFoot img:hover{
+    transform: scale(1.2, 1.2);
+}
 
 div#phoneFoot p, div#emailFoot p{
     height: 50px;
     /* width: 50px; */
 }
+/* end of footer */
+
 
 img.picofme {
     width: 300px;

@@ -1,0 +1,45 @@
+a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+.wrapper{
+    width: 80%;
+    min-height: 6vh;
+    background-color: slategray;
+    border: 2px solid black;
+    position: relative;
+    margin: auto;
+    margin-top: 30px
+    
+}
+h1#wrapTitle{
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px
+
+}
+h4{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+body{
+    background-color: darkgray;
+}
+#pickOne{
+    margin: 10px auto;
+    text-align: center;
+    width: 150px;
+}
+.formWrap{
+    position: relative;
+    margin: auto;
+}
+h5, a{
+    color: white;
+}
+

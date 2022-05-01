@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 h1 {
-    color: gray;
+    color: #2196f3;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -15,12 +16,15 @@ h1 {
     text-align: center;
 }
 
-
+p{
+    font-family:Arial, Helvetica, sans-serif;
+}
 
 div#wrapper {
     margin: 20px 20px;
     padding: 20px 100px;
     max-width: 1600px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 div#firstP::first-letter {
@@ -66,6 +70,10 @@ div.backgroundCont{
     justify-content: center;
 }
 
+.backgroundCont ul, .backgroundCont li{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 div.eduContainer ul{
     display: block;
     float: Left;
@@ -96,7 +104,7 @@ blockquote{
 
 h3#aboutMe{
     font-size: 40px;
-    margin-left: 35px;
+    margin-left: 100px;
 }
 
 main.aboutMain{
@@ -124,6 +132,7 @@ main.homeMain{
     flex-wrap: wrap;
     justify-content:center;
     align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 main.aboutMain p>em>strong{
@@ -177,13 +186,17 @@ div#phoneFoot p, div#emailFoot p{
 
 
 img.picofme {
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
 }
 
 a img#resume{
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
+}
+#resume:hover {
+    width: 280px;
+    height: 280px;
 }
 
 p{
@@ -193,7 +206,8 @@ p{
 h2#homeStatement{
     font-size: 25px;
     padding: 0px 20px;
-    max-width: 600px;
+    max-width: 1000px;
+    text-align: center;
 }
 main.homeMain img{
     width: 200px;
@@ -220,7 +234,6 @@ main.homeMain p{
     width: 100%;
 }
 
-
 /* Projects Page */
 
 main.projMain{
@@ -245,7 +258,12 @@ main.projMain{
     position: relative;
     margin: 5% auto;
     box-shadow: 10px 10px 10px;
+    font-family:Arial, Helvetica, sans-serif;
     
+}
+
+.cardContainer p{
+    font-family:Arial, Helvetica, sans-serif;
 }
 img.cardPic{
     width: 100.4%;
@@ -288,10 +306,13 @@ h1#projh1{
     p{
         font-size: 20px;
     }
+    h3#aboutMe{
+        font-size: 30px;
+    }
 
     img.picofme, a img#resume{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
     h2#homeStatement{
         font-size: 20px;
@@ -361,8 +382,12 @@ h1#projh1{
     }
 
     img.picofme, a img#resume{
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
+    }
+
+    h3#aboutMe{
+        font-size: 25px;
     }
 
     h2#homeStatement{

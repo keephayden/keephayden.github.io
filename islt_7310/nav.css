@@ -10,7 +10,8 @@ header>nav{
     background-repeat: no-repeat;
     background-size: cover; */
 
-    font-size: 20px;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 header nav ul{
     display: flex;
@@ -41,7 +42,7 @@ header nav ul li a{
 }
 header nav ul li ul{
     position: absolute;
-    top: 53px;
+    top: 49px;
     left: 0;
     background: gray;
     display: block;

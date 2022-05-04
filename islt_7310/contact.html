@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title:  Conatact Page  
+
+Use:  Conatact Form 
+
+Author: Jordan Hayden
+
+School/Term:  University of Missouri, Spring 22'
+
+Developed: May 4th, 2022
+
+Tested:  , 2022; Passed on Safari and Chrome browsers.
+*****************************************************************************
+-->
+<html lang="en-US">
+    <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Contact Page</title>
+                <link rel="stylesheet" href="style.css">
+                <link rel="stylesheet" href="nav.css">
+                <link rel="shortcut icon" type="image/ico" href="Images/favicon.ico">
+                <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <!-- <a id="logo" href="/islt_7310/index.html">Jordan Hayden</a> -->
+                <ul class="nav">
+                    <li><a href="/islt_7310/index.html">Home</a></li>
+                    <li><a href="/islt_7310/about.html">About Me</a></li>
+                    <li><a href="/islt_7310/projects.html">Projects</a>
+                        <ul class="dropdown">
+                            <li><a href="JmhhyfPHP/index.html">PHP Playground</a></li>
+                            <li><a href="JmhhyfToDoListS21.html">To-Do List</a></li>
+                            <li><a href="JmhhyfAJAX/index.html">Mars Rover</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/islt_7310/reflection.html">Reflection</a></li>
+                    <li><a href="/islt_7310/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Contact Me</h1>
+        <main>
+            <div class="formContainer">
+                <!-- action="https://formsubmit.co/jordan.hayden923@gmail.com" -->
+                <form action="mailto:jmhhyf@umsystem.edu?Subject=Portfolio/Professional%20Website%20Contact" method="POST" enctype="text/plain">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" for="email" id="email" name="email" placeholder="Email Address" required>
+
+                    <!-- <input type="hidden" name="_subject" value="Portfolio/Professional Website Contact"> -->
+                        
+                    <label for="message">Message</label>
+                    <!-- <input type="text" id="message" name="message" placeholder="Write something.." style="height:200px" required> -->
+                    <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+                
+                    <input type="submit" value="Send">
+                </form>
+              </div>
+        </main>
+        <footer>
+            <p>Name: Jordan Hayden</p>
+            <div id="phoneFoot">
+                <img src="Images/phoneIcon.ico" alt="phoneIcon">
+                <p>Phone: 1-888-888-8888</p>
+            </div>
+            <div id="emailFoot">
+                <img src="Images/emailIcon.ico" alt="emailIcon">
+                <p>Email: jmhhyf@umsystem.edu</p>
+            </div>
+            <p>© 2022 Jordan Hayden</p>
+        </footer>
+    </body>
+</html>

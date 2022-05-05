@@ -347,7 +347,7 @@ table td{
 /* Contact form page */
 /* code from https://www.w3schools.com/howto/howto_css_contact_form.asp */
 input[type=text],[type=email], textarea {
-    width: 100%;
+    width: 50%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -355,6 +355,10 @@ input[type=text],[type=email], textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    margin-right: 50%;
+  }
+  textarea{
+      width: 100%;
   }
   
   input[type=submit] {
@@ -374,7 +378,7 @@ input[type=text],[type=email], textarea {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-    margin: 30px 100px 130px 100px;
+    margin: 30px 200px 130px 200px;
   }
   
 
@@ -470,6 +474,12 @@ input[type=text],[type=email], textarea {
         width:25%;
         font-size: 20px;
         border: 2px solid black;
+    }
+    input[type=text],[type=email], textarea {
+        width: 100%;
+    }
+    .formContainer{
+        margin: 30px 100px 130px 100px;
     }
 }
 

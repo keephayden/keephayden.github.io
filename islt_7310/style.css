@@ -475,8 +475,8 @@ input[type=text],[type=email], textarea {
         font-size: 20px;
         border: 2px solid black;
     }
-    input[type=text],[type=email], textarea {
-        width: 100%;
+    input[type=text],[type=email]  {
+        width: 85%;
     }
     .formContainer{
         margin: 30px 100px 130px 100px;
@@ -572,6 +572,9 @@ input[type=text],[type=email], textarea {
         width:25%;
         font-size: 15px;
         border: 1px solid black;
+    }
+    input[type=text],[type=email]  {
+        width: 100%;
     }
 }
 

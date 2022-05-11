@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title:  Conatact Page  
+
+Use:  Conatact Form 
+
+Author: Jordan Hayden
+
+School/Term:  University of Missouri, Spring 22'
+
+Developed: May 4th, 2022
+
+Tested:  , 2022; Passed on Safari and Chrome browsers.
+*****************************************************************************
+-->
+<html lang="en-US">
+    <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Contact Page</title>
+                <link rel="stylesheet" href="style.css">
+                <link rel="stylesheet" href="nav.css">
+                <link rel="shortcut icon" type="image/ico" href="Images/favicon.ico">
+                <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <!-- <a id="logo" href="/islt_7310/index.html">Jordan Hayden</a> -->
+                <ul class="nav">
+                    <li><a href="/islt_7310/index.html">Home</a></li>
+                    <li><a href="/islt_7310/about.html">About Me</a></li>
+                    <li><a href="/islt_7310/reflection.html">Reflection</a></li>
+                    <li><a href="/islt_7310/contact.html">Contact</a></li>
+                    <li><a href="/islt_7310/projects.html">Projects</a>
+                        <ul class="dropdown">
+                            <li><a href="JmhhyfPHP/index.html">PHP Playground</a></li>
+                            <li><a href="JmhhyfToDoListS21.html">To-Do List</a></li>
+                            <li><a href="JmhhyfAJAX/index.html">Mars Explorer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- bread crumb code -->
+        <SCRIPT LANGUAGE="JavaScript">
+            
+            //Bread crumb script - Kevin Lynn Brown
+            //Duplicate directory names bug fix by JavaScriptKit.com
+            //Visit JavaScript Kit (http://javascriptkit.com) for script
+            
+            var path = "";
+            var href = document.location.href;
+            var s = href.split("/");
+            for (var i=2;i<(s.length-1);i++) {
+            path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+            }
+            i=s.length-1;
+            path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+            var url = window.location.protocol + "//" + path;
+            document.writeln(url);
+            //-->
+            </script>
+        <!-- End of bread crumb code -->
+
+        <h1>Contact Me</h1>
+        <main>
+            <div class="formContainer">
+                <!-- action="https://formsubmit.co/jordan.hayden923@gmail.com" -->
+                <form action="mailto:jmhhyf@umsystem.edu?Subject=Portfolio/Professional%20Website%20Contact" method="POST" enctype="text/plain" autocomplete="on">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+
+                    <!-- <input type="hidden" name="_subject" value="Portfolio/Professional Website Contact"> -->
+                        
+                    <label for="message">Message</label>
+                    <!-- <input type="text" id="message" name="message" placeholder="Write something.." style="height:200px" required> -->
+                    <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+                
+                    <input type="submit" value="Send">
+                </form>
+              </div>
+        </main>
+        <footer>
+            <p>Name: Jordan Hayden</p>
+            <div id="phoneFoot">
+                <img src="Images/phoneIcon.ico" alt="phoneIcon">
+                <p>Phone: 1-888-888-8888</p>
+            </div>
+            <div id="emailFoot">
+                <img src="Images/emailIcon.ico" alt="emailIcon">
+                <p>Email: jmhhyf@umsystem.edu</p>
+            </div>
+            <p>© 2022 Jordan Hayden</p>
+            <p id="scriptLocation" align="left">This free script provided by: <a href="http://javascriptkit.com"> JavaScript Kit</a></p>
+        </footer>
+    </body>
+</html>

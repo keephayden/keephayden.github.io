@@ -1,0 +1,181 @@
+.undLine{
+    text-decoration: underline;
+}
+h3{
+    text-decoration: underline;
+}
+#bigBody{
+    background-color: gray;
+}
+h1{
+    margin: auto;
+    text-align: center;
+}
+
+.podContain{
+    margin-left: auto;
+    display: block;
+}
+#formSelect{
+    margin-top: -3px;
+    /*width: 30%;
+    height: 500px;*/
+    color: aliceblue;
+    
+    float: left;
+    background-color: dimgray;
+    margin-left: 58px;
+}
+#midContain{
+    /*width: 40%;
+    height: 500px;*/
+    margin-top: -3px;
+    float: left;
+    background-color: dimgray;
+    
+}
+#rightContain{
+    background-color: dimgray;
+    color: aliceblue;
+    margin-top: -3px;
+    /*width: 30%;
+    height: 500px;*/
+    float: left;
+}
+.card{
+    width: 30%;
+    height: 800px;
+    margin-left: 1%;
+    padding-left: 0.5%;
+    
+}
+.cardA{
+    padding-left: 5px;
+}
+
+.clear:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.marsImg{
+    width: 380px;
+    margin: 60px auto;
+    margin-top: 200px;
+}
+button{
+    width: 70px;
+    height: 30px;
+    text-align: center;
+}
+input{
+    width: 120px;
+}
+input#apodDate{
+    width: 150px;
+}
+select{
+    width: 215px;
+}
+
+/* Help from https://www.w3schools.com/howto/howto_js_slideshow.asp BELOW */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+    width: 90%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 5;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Help from https://www.w3schools.com/howto/howto_js_slideshow.asp ABOVE */
+.appear{
+    width: 380px;
+    margin-right: 5px;
+}
+.load{
+    font-size: 50px;
+    color: white;
+}
+
+#backProj{
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+}
+#marsTitle{
+    color: white;
+}
+.picTitle{
+    margin-left: 15px;
+    color: aliceblue;
+}

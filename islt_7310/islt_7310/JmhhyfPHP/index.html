@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- 
+    Name: Jordan Hayden
+    Pawprint: Jmhhyf
+    Date: Mar 23
+    Challenge 8 PHP
+
+    References:
+        (1)https://www.w3resource.com/php-exercises/challenges/1/php-challenges-1-exercise-20.php
+        (2)https://www.w3schools.com/php/func_string_ord.asp
+        (3)https://www.daniweb.com/programming/web-development/threads/468247/php-functions-needs-for-my-cylinder
+        (4)https://www.php.net/manual/en/function.round.php
+        (5)TA Help
+-->
+<html lang="en">
+    <head>
+        <title>PHP Project</title>
+        
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="JmhhyfPHP.css">
+        
+        <script                 
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+        </script>
+
+        <link rel="shortcut icon" type="image/ico" href="../Images/favicon.ico">
+        
+    </head>
+    <body>
+        
+        <a href="../projects.html">Back to Projects</a>
+        
+        <div class="wrapper">
+            
+            <h1 id="wrapTitle">Jordan's PHP Playground</h1>
+            
+            <h4>Form Section</h4>
+            
+                
+                <select onchange="myFunction()" id="pickOne" name="choose">
+                    
+                    <option value="0">Select a Function:</option>
+
+                    <option value="1">Name</option>
+
+                    <option value="2">Hamming Number</option>
+
+                    <option value="3">Password Simulation</option>
+
+                    <option value="4">List Creator</option>
+
+                    <option value="5">Cylinder Surface Area</option>
+                    
+                </select>
+                <div id="formWrap">
+
+                </div>
+            
+            
+        </div>
+        
+        <script>
+            
+            var formContain = document.getElementById("formWrap");
+            
+//            var nameForm = "<form><input id='fnForm' type='text' name='name' placeholder='Firstname' required><input id='lnForm' type='text' name='name' placeholder='Lastname' required></form>";
+            
+            
+            
+            function myFunction(){
+                
+                    var theOne = document.getElementById("pickOne").value;
+                
+                    
+                    
+                    if(theOne == 1){
+                        document.getElementById("formWrap").innerHTML = "<h5>Name Function</h5><form action='JmhhyfPHP.php' method='GET' target='_blank'><input id='fnForm' type='text' name='fname' placeholder='Firstname' required><input id='lnForm' type='text' name='lname' placeholder='Lastname' required><button class='reset col-sm' onclick='//' type='submit'>Submit Form</button><button class='reset col-sm'  type='reset'>Clear Form</button></form>";
+                    }
+                    if(theOne == 2){
+                        document.getElementById("formWrap").innerHTML = "<h5>Hamming Number Function</h5><form action='JmhhyfPHP.php' method='GET' target='_blank' ><input type='number' id='hamNum' name='hamNumber' placeholder='Provide a Number' required><button class='reset col-sm' onclick='//' type='submit'>Submit Form</button><button class='reset col-sm'  type='reset'>Clear Form</button></form>";
+                    }
+                    if(theOne == 3){
+                        document.getElementById("formWrap").innerHTML = "<h5>Sign-in Simulation </h5><form action='JmhhyfPHP.php' method='POST' target='_blank'><input id='user' type='text' name='username' placeholder='Username' maxlength='10'><input id='password' type='password' name='password' placeholder='Password'><button class='reset col-sm' onclick='//' type='submit'>Submit Form</button><button class='reset col-sm'  type='reset'>Clear Form</button></form>";
+                    }
+                    if(theOne == 4){
+                        document.getElementById("formWrap").innerHTML = "<h5>List Creator</h5><form action='JmhhyfPHP.php' method='GET' target='_blank'><input id='fsVal' type='text' name='fVal' placeholder='First Singular Value' required><input id='ssVal' type='text' name='sVal' placeholder='Second Singular Value' required><button class='reset col-sm' onclick='//' type='submit' >Submit Form</button><button class='reset col-sm'  type='reset'>Clear Form</button></form>";
+                    }
+                    if(theOne == 5){
+                        document.getElementById("formWrap").innerHTML = "<h5>Cylinder Surface Area Calculator</h5><form action='JmhhyfPHP.php' method='POST' target='_blank'><input type='number' id='cRad' name='radius' placeholder='Enter the Radius' required><input type='number' id='cHei' name='height' placeholder='Enter the Height' required><button class='reset col-sm' onclick='//' type='submit' name='submit'>Submit Form</button><button class='reset col-sm'  type='reset'>Clear Form</button></form>";
+                    }
+                    if(theOne == 0){
+                        document.getElementById("formWrap").innerHTML = "";
+                    }
+                    
+                
+                }
+        </script>
+    </body>
+</html>

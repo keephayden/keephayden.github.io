@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title:  About Page
+
+Use:  To allow users to get to know myself
+
+Author: Jordan Hayden
+
+School/Term:  University of Missouri, Spring 22'
+
+Developed: March 23, 2022
+
+Tested:  May 1, 2022: Passed on Safari and Chrome browsers.
+*****************************************************************************
+-->
+<html lang="en-US">
+    <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>About Me</title>
+                <link rel="stylesheet" href="style.css">
+                <link rel="stylesheet" href="nav.css">
+                <!-- Font Link Below -->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link rel="shortcut icon" type="image/ico" href="Images/favicon.ico">
+                <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">    
+                <!-- Font Link Above -->
+    </head>
+    <!-- <div class="grid-container"> -->
+    <body id="gridCont">
+        <header>
+            <nav>
+                <!-- <a id="logo" href="/islt_7310/index.html">Jordan Hayden</a> -->
+                <ul class="nav">
+                    <li><a href="/islt_7310/index.html">Home</a></li>
+                    <li><a href="/islt_7310/about.html">About Me</a></li>
+                    <li><a href="/islt_7310/reflection.html">Reflection</a></li>
+                    <li><a href="/islt_7310/contact.html">Contact</a></li>
+                    <li><a href="/islt_7310/projects.html">Projects</a>
+                        <ul class="dropdown">
+                            <li><a href="JmhhyfPHP/index.html">PHP Playground</a></li>
+                            <li><a href="JmhhyfToDoListS21.html">To-Do List</a></li>
+                            <li><a href="JmhhyfAJAX/index.html">Mars Explorer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- bread crumb code -->
+        <SCRIPT LANGUAGE="JavaScript">
+            
+            //Bread crumb script - Kevin Lynn Brown
+            //Duplicate directory names bug fix by JavaScriptKit.com
+            //Visit JavaScript Kit (http://javascriptkit.com) for script
+            
+            var path = "";
+            var href = document.location.href;
+            var s = href.split("/");
+            for (var i=2;i<(s.length-1);i++) {
+            path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+            }
+            i=s.length-1;
+            path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+            var url = window.location.protocol + "//" + path;
+            document.writeln(url);
+            //-->
+            </script>
+        <!-- End of bread crumb code -->
+
+        <h1 id="abouth1">Jordan Hayden</h1>
+        <h3 id="aboutMe">About Me</h3>
+        <!-- <h1>Jordan Hayden</h1>
+        
+        <h3 id="aboutMe">About Me</h3> -->
+        <!-- <img src="aboutme.jpg" alt="PictureOfMe"> -->
+        <main class="aboutMain">
+        <!-- <h1>Jordan Hayden</h1>
+        <h3 id="aboutMe">About Me</h3> -->
+            <div class="pContainer">
+                <p>My name is Jordan Hayden. I was born and raised in Saint Charles, Missouri. I live there now as well. I am majoring in Information Technology and minoring in Business at the <strong>University of Missouri</strong>. I have taken a web development course in the past and have some background knowledge over HTML5 and CSS3, as well as other computing componets such as programming, security, networking etc.</p>
+                <p>More about me in general, I love music as a whole. Any genre that is out there I probably will find a way to enjoy it. Every now and then I will enjoy some video games when the time is available. I typically use consoles but I also will play PC games as well. Lastly, I also enjoy spending some of my time doing any physical activity, whether it is a sport or exercise in some way. Staying active is something I hope to carry with me through the rest of my life.</p>
+            </div>
+            <img class="picofme" src="aboutme.jpg" alt="PictureOfMe">
+            <blockquote>'Float like a <em>butterfly</em> sting like a <em>bee</em>.' -Muhammad Ali</blockquote>
+            <div class="eduContainer">
+                <p id="listHead"><strong><em>Background Information</em></strong></p>
+                <div class=".backgroundCont">
+                    <ul>
+                        <li style="list-style: none;"><strong>Degrees:</strong></li>
+                        <li>Major in Information Technology</li>
+                        <li>Minor in Business</li>
+                    </ul>
+                    <ul>
+                        <li style="list-style: none;"><strong>Skills:</strong></li>
+                        <li>Web Development</li>
+                        <li>Cyber security</li>
+                        <li>Networking</li>
+                        <li>Multi-Media</li>
+                        <li>Programming</li>
+                    </ul>
+                    <ul>
+                        <li style="list-style: none;"><strong>Languages:</strong></li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>C Sharp</li>
+                    </ul>
+                    <ul class="eduUL">
+                        <li style="list-style: none;"><strong>Education:</strong></li>
+                        <li>Junior at the University of Missouri</li>
+                        <li>3.8 GPA</li>
+                        <li>Certificates in Cyber Security, Information Systems and Technology, Web and Mobile
+                            Applications Development</li>
+                    </ul>
+                </div>
+
+
+                <!-- <p>
+                    <strong>Degrees:</strong>
+                    <br>
+                    - Major in Information Technology
+                    - Minor in Business
+                    <br/>
+                    <strong>Skills:</strong>
+                    <br>
+                    - Web Development
+                    - Cyber security
+                    - Networking
+                    - Multi-Media
+                    - Programming
+                    <br/><br>
+                    <em><strong>Background information:</strong></em>
+                    <br/>
+                    <strong>Languages:</strong>
+                    <br>
+                    - Python
+                    - JavaScript
+                    - HTML5
+                    - CSS
+                    - C Sharp
+                    <br/>
+                    <strong>Education:</strong>
+                    <br>
+                    - Junior at the University of Missouri
+                    - 3.8 GPA
+                    - Certificates in Cyber Security, Information Systems and Technology, Web and Mobile
+                    Applications Development</p> -->
+                </div>
+                <a href="/islt_7310/resume.pdf"><img id="resume" src="download.png" alt="Resume"></a>
+                <video controls>
+                    <source src="resumeVideo.mp4" type="video/mp4">
+                </video>
+    <!-- </div> -->
+            </main>
+            <!-- <a id="resume" href="/islt_7310/resume.pdf"><img src="download.png" alt="Resume"></a> -->
+            <footer>
+                <p>Name: Jordan Hayden</p>
+                <div id="phoneFoot">
+                    <img src="Images/phoneIcon.ico" alt="phoneIcon">
+                    <p>Phone: 1-888-888-8888</p>
+                </div>
+                <div id="emailFoot">
+                    <img src="Images/emailIcon.ico" alt="emailIcon">
+                    <p>Email: jmhhyf@umsystem.edu</p>
+                </div>
+                <p>© 2022 Jordan Hayden</p>
+                <p id="scriptLocation" align="left">This free script provided by: <a href="http://javascriptkit.com"> JavaScript Kit</a></p>
+            </footer>
+    </body>
+</html>
+

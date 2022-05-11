@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- 
+    Name: Jordan Hayden
+    Pawprint: Jmhhyf
+    Date: Feb 26
+    Challenge: To-Do ListS21
+
+    References:
+        (1)https://getbootstrap.com/docs/4.0/layout/grid/
+
+        (2)https://www.google.com/url?sa=i&url=https%3A%2F%2Fthenounproject.com%2Fterm%2Fmoon%2F381294%2F&psig=AOvVaw3ImI6bT1EySe9Tl3cmGFsV&ust=1614480677842000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNidh62Hie8CFQAAAAAdAAAAABAO
+        (3)https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+        (4) https://stackoverflow.com/questions/11553768/remove-table-row-after-clicking-table-row-delete-button
+        (5)https://www.w3schools.com/tags/att_required.asp
+        (6)https://stackoverflow.com/questions/27714469/check-if-date-is-in-the-past-without-submitting-form
+        (7) TA Help
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>To Do List</title>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+        
+        <script src="JmhhyfToDoListS21.js"></script>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+        <link rel="shortcut icon" type="image/ico" href="Images/favicon.ico">
+            
+        <!-- Bootstrap CSS from Tables.html-->
+        <link rel="stylesheet" 
+             
+             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+              crossorigin="anonymous">
+        <style>
+            
+            .darkTheme, .theme{
+                background-color: black;
+                font-size: 20px;
+                color: white;
+            }
+         
+            .lightTheme{
+                color: steelblue;
+                
+            }
+            
+            body{
+                background-color: aliceblue;
+                font-size: 20px;
+                color: steelblue;
+            }
+            
+            .toDoContainer{
+                background-color: white;
+                height: 330px;
+                overflow: scroll;
+                padding: 0;
+                margin-top: 100px;
+                border: 3px solid steelblue;
+                border-top: 0;
+            }
+            .toDoDark{
+                background-color: dimgray;
+            }
+            
+            #form{
+                color: dimgray;
+                padding: 0;
+            }
+            h2{
+                margin-top: 75px;
+                text-align: center;
+            }
+            .formContainer{
+                margin-top: 70px;
+                padding: 10px;
+                background-color: lightgrey;
+                border: 1px solid black
+            }
+            button{
+                margin: 10px;
+            }
+            .formContainer p{
+                text-align: center;
+                font-size: 12px;
+            }
+            input, select{
+                margin-right: 20px;
+            }
+            #dark-mode{
+                width: 150px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            .add{
+                color: limegreen;
+            }
+            .reset{
+                border: 1px solid black;
+                color: red;
+            }
+            .cForm{
+                background-color: white;
+                color: black;
+            }
+            #tabBody{
+                font-size: 20px;
+                color: black; 
+            }
+            
+            
+            
+            
+        </style>
+    </head>
+    <body class="lightTheme">
+    
+        <a id="lightTheme" class="lightTheme" href="projects.html">Back to Projects</a>
+        
+        <!-- Image from https://www.google.com/url?sa=i&url=https%3A%2F%2Fthenounproject.com%2Fterm%2Fmoon%2F381294%2F&psig=AOvVaw3ImI6bT1EySe9Tl3cmGFsV&ust=1614480677842000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNidh62Hie8CFQAAAAAdAAAAABAO-->
+        
+        <button onclick="lightNDark()" id="dark-mode">Theme: Light</button>
+        
+        
+        
+        <h2 id="toDoTitle" ondblclick="toDoName()"> Jordan's To Do List</h2>
+        
+        <!-- some code below from https://getbootstrap.com/docs/4.0/layout/grid/-->
+        <div id="toDoContainer" class="toDoContainer container lightTheme">
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th>Priority</th>
+                        <th>Action</th>
+                    </tr>    
+                </thead>
+                <tbody id="tabBody">
+                    <tr>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="formContainer container">
+            <form id="form">
+                <p>Add a to do</p>
+                <div class="col-sm row">
+                    
+                    <!--Below Help from https://www.w3schools.com/tags/att_required.asp-->
+                    
+                    <input id="title" type="text" name="title" placeholder="Title" required>
+
+                    <select id="type" name="type" required>
+                        <option value="" >Select Type</option>
+                        <option value="Homework">Homework</option>
+                        <option value="Project">Project</option>
+                        <option value="Test">Test</option>
+                        <option value="Study">Study</option> 
+                    </select>
+
+                    <label for="priority">Priority:</label>
+                    <input class="col-sm" type="range" id="priority" name="priority" min="0" max="6" step="1" required>
+
+                    <input id="date" type="date" name="date" required>
+                    
+                    <!--Above Help from https://www.w3schools.com/tags/att_required.asp-->
+                    
+                </div>
+                <div class="row">
+                    <button class="add col-sm" type="button" onclick="tableAdd()">Add to list</button>
+
+                    <button class="reset col-sm" onclick="clearForm()" type="button">Clear Form</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

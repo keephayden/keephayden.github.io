@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--Name:Jordan Hayden
+    Pawprint: Jmhhyf 
+    Date: April 7 2021
+    Challenge: AJAX S21
+    
+    References:
+        (1) TA Help
+        (2) Past Challenges
+        (3) https://www.w3schools.com/howto/howto_js_slideshow.asp
+-->
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="JmhhyfAJAX-S21.css">
+        <title>AJAX</title>
+        <meta charset="utf-8">
+        
+        
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+        
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+              crossorigin="anonymous">
+        
+        
+        
+    </head>
+<!--    Bootstrap challenge references below-->
+    <body id="bigBody" onload="fetchManifest()">
+        
+        <a id="backProj" href="../JmhhyfProjectsS21.html">Back To Projects</a>
+        
+        <h1 id="marsTitle">Mars Explorer</h1>
+        
+        <div class="container-fluid">
+            <div class="podContain">
+                <div id="formSelect" class="card cardA border-dark">
+                    <br>
+                    <h3>Rover Photographs</h3>
+
+                    <label for="marsSol">Martian Sol:</label>
+                    <input id="marsSol" type="number" onchange="fetchCameras()">
+                    <br>
+
+                    <label for="marsCam">Camera:</label>
+                    <select id="marsCam" onchange="roverSubmit()">
+                        <option value="">Please Select a Camera</option>
+    <!--
+                        <option value="FHAZ">Front Hazard Avoidance Camera</option>
+                        <option value="NAVCAM">Navigation Camera</option>
+                        <option value="PANCAM">Panoramic Camera</option>
+                        <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+    -->
+                    </select>
+                    <br>
+
+<!--                    <button type="submit" onclick="roverSubmit()">Submit</button>-->
+                    <br><br><br><br><br>
+
+                    <h3>NASA Astronomy Picture of the Day</h3>
+                    <label for="apodDate">APOD Date:</label>
+                    <input type="date" id="apodDate" onchange="apodSubmit()">
+                    <br>
+<!--                    <button type="submit" onclick="apodSubmit()">Submit</button>-->
+                </div>
+
+
+                <div id="midContain" class="card border-dark">
+                    <div id="slideshow-container"  class="slideshow-container">
+
+
+                </div>
+                <br>
+                </div>
+
+                <div id="rightContain" class="card border-dark"></div>
+            </div>    
+        </div>
+<!--        Bootstrap challenge references above-->
+
+        
+        
+        
+       <script src="JmhhyfAJAX-S21.js"></script>
+    </body>
+</html>

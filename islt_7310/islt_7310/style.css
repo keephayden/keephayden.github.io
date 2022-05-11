@@ -1,0 +1,662 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+h1 {
+    color: #2196f3;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+#hh1 {
+    color: #2196f3;
+    font-size: 50px;
+    text-align: center;
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+div#wrapper {
+    margin: 20px 20px;
+    padding: 20px 100px;
+    max-width: 1600px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+div#firstP::first-letter {
+    color: #2196f3;
+    font-size: 35px;
+}
+
+div.P {
+    font-size: 25px;
+    line-height: 200%;
+    justify-content: center;
+    text-align: center;
+}
+div#firstP{
+    font-size: 25px;
+    line-height: 200%;
+    justify-content: center;
+    text-align: center;
+}
+
+div.pContainer{
+    margin: 5px;
+    padding: 0px 40px;
+    max-width: 1200px;
+    text-indent: 1cm;
+}
+div.pContainer p{
+    line-height: 200%;
+}
+
+div.eduContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 0px 40px;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+div.backgroundCont{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 0px 40px;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.backgroundCont ul, .backgroundCont li{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+div.eduContainer ul{
+    display: block;
+    float: Left;
+    font-size: 25px;
+    max-width: 200px;
+}
+
+div.eduContainer ul.eduUL{
+    font-size: 25px;
+    max-width: 430px;
+    justify-content: center;
+}
+
+p#listHead{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+blockquote{
+    display:block;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+}
+
+h3#aboutMe{
+    font-size: 40px;
+    margin-left: 100px;
+}
+
+main.aboutMain{
+    margin: 2px;
+    padding: 5px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+
+video{
+    max-width: 500px;
+    max-height: 300px;
+}
+
+main.homeMain{
+    margin: 2px;
+    padding: 5px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+main.aboutMain p>em>strong{
+    margin: 2px;
+    padding: 5px;
+}
+main.homeMain p{
+    margin: 2px;
+    padding: 5px;
+    line-height: 200%;
+    margin: 0 50px 50px 50px;
+    text-align: center;
+}
+
+/* start of footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+    height: 58px;
+    border-top: 2px solid black;
+    background-color: gray;
+    color: #f0f0f0;
+
+    background-image: url("Images/blueGrayFoot.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer p, div#phoneFoot, div#emailFoot{
+    margin: 5px;
+    padding: 4px 4px;
+    align-items: center;
+    font-size: 20px;
+    display: flex;
+    text-shadow: 2px 1px #000;
+    -webkit-text-stroke-width: .2px;
+    -webkit-text-stroke-color: black;
+}
+footer p#scriptLocation{
+    font-size: 15px;
+}
+
+footer p#scriptLocation a{
+    text-shadow: none;
+}
+
+div#phoneFoot img, div#emailFoot img{
+    height: 49px;
+    width: 50px;
+}
+div#phoneFoot img:hover, div#emailFoot img:hover{
+    transform: scale(1.2, 1.2);
+}
+
+div#phoneFoot p, div#emailFoot p{
+    height: 50px;
+    /* width: 50px; */
+}
+/* end of footer */
+
+
+img.picofme {
+    width: 275px;
+    height: 275px;
+}
+
+a img#resume{
+    width: 275px;
+    height: 275px;
+}
+#resume:hover {
+    width: 280px;
+    height: 280px;
+    border: 1px solid #2196f3;
+}
+
+p{
+    font-size: 25px;
+}
+
+h2#homeStatement{
+    font-size: 25px;
+    padding: 0px 20px;
+    max-width: 1000px;
+    text-align: center;
+    line-height: 200%;
+}
+main.homeMain img{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+main.homeMain p{
+    padding: 10px 15px;
+    margin-top: 25px;
+}
+
+
+.bgImage{
+    background: url("mizzouheader.jpeg") no-repeat center;
+    min-height: 35vh;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    opacity: 45%;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+/* Projects Page */
+
+main.projMain{
+    width: 90%;
+    position: relative;
+    margin: 100px auto;
+    margin-top: 50px;
+    /* margin-bottom: 80px; */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.cardContainer{
+    width: 450px;
+    background-color: white;
+    border-width: 2px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 510px;
+    position: relative;
+    margin: 5% auto;
+    box-shadow: 10px 10px 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.cardContainer p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+img.cardPic{
+    width: 100.4%;
+    border-bottom: 10px solid black;
+    height: 56%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+/* div.hoverUp{
+    background-color: white;
+    width: 100.4%;
+    border-bottom: 10px solid black;
+    height: 56%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+    display: hidden;
+} */
+.cardContainer, span{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+main.projMain p{
+    font-size: 15px;
+    margin: 10px 10px;
+}
+.link{
+    font-size: 22px;
+    font-weight: bold;
+    color: #2196f3;
+}
+h1#projh1{
+    margin-top: 70px;
+}
+
+/* STYLES FOR THE TABLE */
+div#tableMain{
+    width: 100%;
+    height:400px;
+    margin-top: 60px;
+    align-items: center;
+}
+caption{
+    color: #000;
+    text-decoration: overline;
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+}
+table{
+    background-color: white;
+    color: #2196f3;
+    width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+table tr th{
+    text-align: left;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0f0f0;
+}
+table th, tr:nth-child(even){
+    background-color: gray;
+    color:white;
+}
+table th, table td{
+    width:55%;
+    font-size: 40px;
+    border: 4px solid black;
+}
+table td{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+div.cardContainer p.uses{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/* Contact form page */
+/* code from https://www.w3schools.com/howto/howto_css_contact_form.asp */
+input[type=text],[type=email], textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    margin-right: 50%;
+  }
+  textarea{
+    width: 100%;
+  }
+  
+  input[type=submit] {
+    background-color: #2196f3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #68b1ed;
+  }
+  
+  .formContainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 30px 200px 130px 200px;
+  }
+  
+
+
+@media (max-width: 800px){
+    p{
+        font-size: 20px;
+    }
+    h3#aboutMe{
+        font-size: 30px;
+    }
+
+    img.picofme, a img#resume{
+        width: 150px;
+        height: 150px;
+    }
+
+    #resume:hover {
+        width: 170px;
+        height: 170px;
+    }
+
+    h2#homeStatement{
+        font-size: 20px;
+        margin: 0;
+        padding: 10px 15px;
+    }
+    main.homeMain p{
+        padding: 10px 15px;
+    }
+    main.homeMain img{
+        width: 170px;
+        height: 170px;
+    }
+    .bgImage{
+        background: url("mizzouheader.jpeg");
+        min-height: 27vh;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 9;
+        border: 2px solid black;
+        opacity: 45%;
+    }
+    h1#hh1{
+        font-size: 40px;
+    }
+    div#wrapper {
+        margin: 20px 20px;
+        padding: 20px 65px;
+        max-width: 1200px;
+    }
+    div.P {
+        font-size: 20px;
+    }
+    div#firstP{
+        font-size: 20px;
+    }
+    div.pContainer{
+        font-size: 20px;
+    }
+    div.eduContainer ul, div.eduContainer ul.eduUL{
+        font-size: 15px;
+    }
+    main.projMain p{
+        font-size: 17px;
+    }
+    blockquote{
+        font-size: 17px;
+    }
+    p#listHead{
+        font-size: 25px;
+    }
+    video{
+        width: 300px;
+        height: 200px;
+    }
+    footer p{
+        font-size: 15px;
+    }
+
+    /* Responsive table editions */
+    caption{
+        font-size: 20px;
+    }
+    table{
+        width:500px;
+        border: 3px solid black;
+    }
+    table th, table td{
+        width:25%;
+        font-size: 20px;
+        border: 2px solid black;
+    }
+    input[type=text],[type=email]  {
+        width: 85%;
+    }
+    .formContainer{
+        margin: 30px 100px 130px 100px;
+    }
+}
+
+@media (max-width: 600px){
+    p{
+        font-size: 15px;
+    }
+
+    img.picofme, a img#resume{
+        width: 100px;
+        height: 100px;
+    }
+
+    #resume:hover {
+        width: 110px;
+        height: 110px;
+    }
+
+    h3#aboutMe{
+        font-size: 25px;
+    }
+
+    h2#homeStatement{
+        font-size: 15px;
+        margin: 0;
+        padding: 5px 10px;
+    }
+    main.homeMain p{
+        padding: 5px 10px;
+    }
+    main.homeMain img{
+        width: 150px;
+        height: 150px;
+    }
+    .bgImage{
+        background: url("mizzouheader.jpeg");
+        min-height: 20vh;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 9;
+        border: 2px solid black;
+        opacity: 45%;
+        display: flex;
+    }
+    h1#hh1{
+        font-size: 30px;
+    }
+    div#wrapper {
+        margin: 20px 20px;
+        padding: 20px 30px;
+        max-width: 1200px;
+    }
+    div.P {
+        font-size: 16px;
+    }
+    div#firstP{
+        font-size: 16px;
+    }
+    div.pContainer{
+        font-size: 15px;
+    }
+    div.eduContainer ul, div.eduContainer ul.eduUL{
+        font-size: 15px;
+    }
+    blockquote{
+        font-size: 15px;
+    }
+    p#listHead{
+        font-size: 20px;
+    }
+    footer p{
+        font-size: 10px;
+    }
+    video{
+        width: 180px;
+        height: 100px;
+    }
+    /* Responsive table editions */
+    caption{
+        font-size: 15px;
+    }
+    table{
+        width:350px;
+        border: 2px solid black;
+    }
+    table th, table td{
+        width:25%;
+        font-size: 15px;
+        border: 1px solid black;
+    }
+    input[type=text],[type=email]  {
+        width: 100%;
+    }
+}
+
+@media print{
+    body{
+        background: transparent !important;
+        color: #000 !important;
+        margin: 1in;
+        font-family: serif;
+    }
+    footer img,
+    .cardContainer a.link,
+    .bgImage,
+    video,
+    header,
+    footer,
+    img#resume {
+        display: none;
+    }
+    h3#aboutMe{
+        font-size: 20pt;
+        margin: 5pt 35pt 5pt 35pt;
+    }
+    .pContainer, .eduContainer, .eduContainer ul{
+        font-family: serif;
+        font-size: 40pt;
+    }
+    h1{
+        margin-top: 30pt;
+    }
+    blockquote{
+        font-size: 15pt;
+        justify-content: center;
+    }
+    img.picofme{
+        margin-left: 30pt;
+        width: 100pt;
+        height: 100pt;
+        justify-content: center;
+    }
+    .cardContainer{
+        width: 200pt;
+        height: 250pt;
+    }
+    .projMain div.cardContainer p{
+        font-size: 8pt;
+    }
+    
+
+}
+
+
+
+/* @media (max-width: 800px){
+    p{
+        font-size: 20px;
+    }
+
+    img.picofme, a img#resume{
+        width: 200px;
+        height: 200px;
+    }
+} */

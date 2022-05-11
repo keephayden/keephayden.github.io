@@ -1,0 +1,190 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+header>nav{
+    width: 100%;
+    background: gray;
+    /* background-image: url("Images/blueGrayFoot.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header nav ul{
+    display: flex;
+    justify-content:flex-end;
+    margin: 0 auto;
+    padding: 0;
+}
+header nav ul li{
+    list-style: none;
+    position: relative;
+    padding: 15px 15px;
+    transition: 0.5s;
+    box-sizing: border-box;
+    border-right: 1px solid gray;
+}
+header nav ul li:hover{
+    background: #2196f3;
+}
+header nav ul li:last-child{
+    border-right: none;
+
+}
+header nav ul li a{
+    text-decoration: none;
+    padding: 0 20px;
+    color: white;
+
+}
+header nav ul li ul{
+    position: absolute;
+    top: 49px;
+    right: 0;
+    background: gray;
+    display: block;
+    width: 200px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+header nav ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+header nav ul li ul li{
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    padding: 10px 10px;
+}
+a#logo{
+    
+    position:relative;
+    margin: 0 auto;
+    padding: 10px 15px;
+    bottom: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    z-index: 3;
+}
+@media (max-width: 768px){
+    header nav ul{
+        display: block;
+    }
+    header nav ul li{
+        display: block;
+    }
+    header nav ul li ul{
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+/* nav {
+    top: 0px;
+    width: 100%;  
+    display: flex; 
+    justify-content: right;
+    background-color: lightgray;
+    border: 2px solid black;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav>ul li {
+    position: relative; 
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    float: left;
+}
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 5px;
+    width: 100px; 
+} 
+
+
+nav a:link{
+    background-color: lightgray;
+}
+nav a:hover, nav a:focus {
+    background-color: gray;
+    color: white;
+}
+nav a:active{
+    background-color: darkgray;
+    color: white;
+} 
+
+nav ul>li ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+nav ul ul li {
+    float:none;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+nav>ul>li:hover>ul{
+    display: block;
+}
+
+
+ul.dropdown li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 5px;
+    width: 100px; 
+}
+
+
+ul.dropdown li a:hover{
+    background-color: gray;
+}
+
+
+nav>ul li a, nav>li ul.dropdown li a{
+    color: black;
+    font-family: Arial;
+}
+
+
+
+
+@media (max-width: 800px){
+    nav {
+        font-size: 15px;
+    }
+    nav a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 6px;
+        width: 75px; 
+        
+    }
+}
+
+@media (max-width: 600px){
+    nav {
+        font-size: 10px;
+    }
+    nav a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 4px;
+        width: 50px; 
+        
+    }
+*/

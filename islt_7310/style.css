@@ -170,6 +170,14 @@ footer p, div#phoneFoot, div#emailFoot{
     -webkit-text-stroke-width: .2px;
     -webkit-text-stroke-color: black;
 }
+footer p#scriptLocation{
+    font-size: 15px;
+}
+
+footer p#scriptLocation a{
+    text-shadow: none;
+}
+
 div#phoneFoot img, div#emailFoot img{
     height: 49px;
     width: 50px;

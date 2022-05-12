@@ -503,6 +503,9 @@ input[type=text],[type=email], textarea {
     .formContainer{
         margin: 30px 100px 130px 100px;
     }
+    .cardContainer{
+        height: 540px;
+    }
 }
 
 @media (max-width: 600px){
@@ -597,6 +600,9 @@ input[type=text],[type=email], textarea {
     }
     input[type=text],[type=email]  {
         width: 100%;
+    }
+    .cardContainer{
+        height: 540px;
     }
 }
 
